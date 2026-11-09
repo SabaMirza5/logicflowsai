@@ -36,7 +36,7 @@ function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="flex flex-col items-stretch justify-between gap-10 pl-[5%] lg:pr-0 pr-[5%]  pt-9 md:pt-14 lg:flex-row lg:items-stretch lg:gap-12 xl:gap-20 lg:pt-[50px]">
+    <section className="flex flex-col-reverse items-stretch justify-between gap-10 pl-[5%] lg:pr-0 pr-[5%]  pt-9 md:pt-14 lg:flex-row lg:items-stretch lg:gap-12 xl:gap-20 lg:pt-[50px]">
       {/* Left Content */}
       <motion.div
         variants={containerVariants}
@@ -55,7 +55,7 @@ function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="2xl:pt-[56px] xl:pt-6 pt-5 2xl:text-lg md:text-base text-sm text-text_color 2xl:leading-[44px] lg:leading-8 leading-8 text-center lg:text-start"
+          className="2xl:pt-2 xl:pt-2 pt-3 2xl:text-lg md:text-base text-sm text-text_color 2xl:leading-[44px] lg:leading-8 leading-7 md:text-center lg:text-start text-justify"
         >
           Transform the way your business operates with intelligent AI agents,
           powerful automation workflows, and custom AI SaaS solutions. Logic
@@ -66,7 +66,7 @@ function Hero() {
         {/* Buttons */}
         <motion.div
           variants={itemVariants}
-          className="flex items-center gap-5 xl:flex-row flex-col 2xl:pt-[50px] xl:pt-10 pt-6"
+          className="flex items-center md:gap-5 gap-3 xl:flex-row flex-col 2xl:pt-3 xl:pt-5 pt-5"
         >
           <button onClick={() => navigate("/services")} className="bg-secondary text-center text-white xl:w-1/2 w-full py-3 capitalize 2xl:py-4 rounded-[30px] hover:bg-primary transition-colors xl:text-base text-sm">
             Explore Our Services
@@ -81,7 +81,7 @@ function Hero() {
         <ScrollTrigger
           onEnter={() => setCounterStart(true)}
           onExit={() => setCounterStart(false)}
-          className="2xl:pt-[100px] md:pt-16 pt-10"
+          className="2xl:pt-10 md:pt-5 pt-5"
         >
           <motion.div
             variants={containerVariants}
@@ -131,7 +131,7 @@ function Hero() {
         </ScrollTrigger>
       </motion.div>
 
-      {/* Right Image - Bottom Aligned */}
+      {/* Right Image - Top Aligned */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -140,7 +140,7 @@ function Hero() {
           delay: 0.3,
           ease: "easeOut",
         }}
-        className="flex w-full items-end justify-center lg:w-1/2 lg:self-stretch"
+        className="flex w-full items-start justify-center lg:w-1/2 lg:self-stretch"
       >
         <motion.img
           src={heroimg1}
@@ -148,7 +148,7 @@ function Hero() {
           initial={{ scale: 0.96 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="block h-auto w-full object-contain object-bottom"
+          className="block h-auto w-full object-contain object-top"
         />
       </motion.div>
     </section>

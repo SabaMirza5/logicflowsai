@@ -87,7 +87,7 @@ function UnlockBusiness() {
             </span>
           </h1>
 
-          <p className="2xl:text-lg md:text-base text-sm lg:pt-5 pt-3 text-text_color 2xl:leading-[44px] lg:leading-7 leading-6 text-center">
+          <p className="2xl:text-lg md:text-base text-sm lg:pt-5 pt-3 text-text_color 2xl:leading-[44px] lg:leading-7 leading-6 md:text-center text-justify">
             Discover how LogicFlowsAI helps businesses work smarter through
             intelligent automation, custom AI development, seamless
             integrations, and innovative customer support solutions.

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -70,10 +69,7 @@ const OurClient = () => {
       </motion.h1>
 
       {/* Client Slider */}
-      <motion.div
-        variants={containerVariants}
-        className="w-full"
-      >
+      <motion.div variants={containerVariants} className="w-full">
         <Swiper
           spaceBetween={10}
           slidesPerView={2}

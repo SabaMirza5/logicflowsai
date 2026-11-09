@@ -105,7 +105,7 @@ function OurServices() {
           className="md:w-1/2 w-full"
           variants={headingVariants}
         >
-          <p className="2xl:text-lg text-sm text-text_color 2xl:leading-[44px] lg:leading-7 leading-6">
+          <p className="2xl:text-lg text-sm text-text_color 2xl:leading-[44px] lg:leading-7 leading-6 md:text-left text-justify">
             Discover AI-powered solutions designed to simplify operations,
             enhance customer experiences, and accelerate business growth.
             From intelligent AI agents to workflow automation and custom
@@ -150,7 +150,7 @@ function OurServices() {
               {service.title}
             </h2>
 
-            <p className="2xl:text-xl lg:text-base text-sm md:pt-3 pt-1 2xl:leading-10 lg:leading-7 leading-6">
+            <p className="2xl:text-xl lg:text-base text-sm md:pt-3 pt-1 2xl:leading-10 lg:leading-7 leading-6 md:text-center text-justify">
               {service.description}
             </p>
 

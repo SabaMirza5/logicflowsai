@@ -78,3 +78,37 @@ body {
   transform: scale(1.1);
 
 } 
+
+
+/* Website Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f0f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #5706C5 0%,
+    #F66B0E 100%
+  );
+  border-radius: 20px;
+  border: 2px solid #f3f0f8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #F66B0E 0%,
+    #5706C5 100%
+  );
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5706C5 #f3f0f8;
+}

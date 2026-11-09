@@ -110,12 +110,12 @@ function AboutCaseStudy() {
             Our Success Stories
           </p>
 
-          <h2 className="text-heading text-2xl md:text-4xl lg:text-5xl font-bold mt-4">
+          <h2 className="text-heading text-2xl md:text-4xl lg:text-5xl font-bold md:mt-4 mt-2">
             Real Solutions.
             <span className="text-primary"> Real Impact.</span>
           </h2>
 
-          <p className="text-text_color text-sm md:text-base leading-7 md:leading-8 mt-5">
+          <p className="text-text_color text-xs md:text-base leading-6 md:leading-8 md:mt-5 mt-3 md:text-center text-justify">
             Explore how we help businesses transform their operations with
             intelligent AI solutions, automation, and innovative technologies.
             Discover practical solutions designed to solve real business
@@ -126,7 +126,7 @@ function AboutCaseStudy() {
 
       {/* ================= CASE STUDIES SECTION ================= */}
 
-      <section className="px-[5%] pt-8 pb-16 md:pt-10 md:pb-24">
+      <section className="px-[5%] pt-5 pb-5 md:pt-10 md:pb-24">
         <div className="max-w-6xl mx-auto flex flex-col gap-6 md:gap-8">
           {caseStudies.map((study, index) => (
             <motion.div
@@ -194,11 +194,11 @@ function AboutCaseStudy() {
                   {study.category}
                 </span>
 
-                <h3 className="text-heading text-xl md:text-2xl 2xl:text-3xl font-bold leading-snug mt-3">
+                <h3 className="text-heading text-base md:text-2xl 2xl:text-3xl font-bold leading-snug md:mt-3 mt-1">
                   {study.title}
                 </h3>
 
-                <p className="text-text_color text-sm md:text-base leading-7 mt-3">
+                <p className="text-text_color text-xs md:text-base md:leading-7 leading-5 md:mt-3 mt-1 md:text-left text-justify">
                   {study.description}
                 </p>
 

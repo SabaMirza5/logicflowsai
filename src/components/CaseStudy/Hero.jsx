@@ -47,7 +47,7 @@ function CaseStudyPage() {
 
           <motion.h1
             variants={fadeUp}
-            className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mt-5"
+            className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight md:mt-5 mt-2"
           >
             Real Business Challenges.
             <span className="text-primary"> Smarter AI Solutions.</span>
@@ -55,7 +55,7 @@ function CaseStudyPage() {
 
           <motion.p
             variants={fadeUp}
-            className="text-white/80 text-sm md:text-lg leading-7 md:leading-9 max-w-3xl mx-auto mt-6"
+            className="text-white/80 text-sm md:text-lg leading-7 md:leading-9 max-w-3xl mx-auto md:mt-6 mt-3 md:text-center text-justify"
           >
             Explore how intelligent AI solutions, automation, and software
             integrations can help businesses simplify operations, improve

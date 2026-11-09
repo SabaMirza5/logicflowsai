@@ -23,22 +23,22 @@ function TransferringBusiness({ navigateTo }) {
   };
 
   return (
-    <section className="flex justify-between items-center xl:gap-28 gap-10 px-[5%] md:flex-row flex-col md:bg-bottom bg-center bg-contain bg-no-repeat bg-none md:bg-[url('../src/assets/imgs/bglines.png')] overflow-x-clip">
+    <section className="flex w-full justify-between items-center xl:gap-28 gap-10 px-[5%] md:flex-row flex-col md:bg-bottom bg-center bg-contain bg-no-repeat bg-none md:bg-[url('../src/assets/imgs/lines.png')] overflow-x-hidden">
       {/* Left Content */}
       <motion.div
-        className="md:w-1/2 w-full md:text-start text-center"
+        className="min-w-0 w-full md:flex-1 md:text-start text-center"
         variants={textVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h1 className="text-heading 2xl:text-[60px] xl:text-[40px] lg:text-[26px] md:text-3xl text-2xl 2xl:!leading-[112px] xl:!leading-[50px] md:!leading-[44px] !leading-8">
+        <h1 className="     text-heading 2xl:text-[60px] xl:text-[35px] lg:text-[26px] md:text-3xl text-2xl 2xl:!leading-[1.25] xl:!leading-[1.4] md:!leading-[1.4] !leading-8 text-start">
           Transforming the Way
           <br />
           Businesses <span className="text-primary">Work With AI</span>
         </h1>
 
-        <p className="2xl:pt-[56px] xl:pt-8 pt-5 2xl:text-lg md:text-base text-sm text-text_color 2xl:leading-[44px] !leading-8">
+        <p className="2xl:pt-[56px] xl:pt-8 pt-5 2xl:text-lg md:text-base text-sm text-text_color 2xl:leading-[44px] !leading-8 md:text-start text-justify">
           At LogicFlowsAI, we help businesses unlock their full potential
           through intelligent AI solutions, workflow automation, and custom
           digital experiences. From streamlining everyday operations to building
@@ -59,7 +59,7 @@ function TransferringBusiness({ navigateTo }) {
 
       {/* Right Image */}
       <motion.div
-        className="flex items-center justify-center md:w-1/2 w-full"
+        className="flex min-w-0 items-center justify-center w-full md:flex-1"
         variants={imageVariants}
         initial="hidden"
         whileInView="visible"

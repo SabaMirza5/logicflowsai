@@ -10,6 +10,8 @@ import team1 from "../../assets/imgs/team1.png";
 import team2 from "../../assets/imgs/team2.png";
 import team3 from "../../assets/imgs/team3.png";
 import team4 from "../../assets/imgs/team4.png";
+import team5 from "../../assets/imgs/team5.jpg";
+import team6 from "../../assets/imgs/team6.jpg";
 
 function TestimonialCard({ item }) {
   const swiperSlide = useSwiperSlide();
@@ -30,7 +32,7 @@ function TestimonialCard({ item }) {
         scale: 1.03,
         boxShadow: "0px 20px 40px rgba(59,130,246,0.18)",
       }}
-      className="bg-white rounded-2xl p-4 space-y-2 cursor-pointer"
+      className="bg-white rounded-2xl p-4 md:space-y-2 space-y-1 cursor-pointer"
     >
       {item.layout === "image-first" && (
         <motion.img
@@ -50,7 +52,7 @@ function TestimonialCard({ item }) {
         <p className="font-normal text-secondary">{item.title}</p>
       </div>
 
-      <p className="md:text-sm text-xs leading-5 text-text-color">
+      <p className="md:text-sm text-xs leading-5 text-text-color  text-justify">
         {item.text}
       </p>
 
@@ -73,57 +75,57 @@ export default function Testimonials() {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
- const testimonials = [
-  {
-    id: 1,
-    name: "Moiz Qadeer",
-    title: "Director & AI Strategy Lead",
-    image: team1,
-    layout: "image-first",
-    text: "Leading AI strategy and helping organizations identify opportunities to integrate intelligent technologies into their business models for sustainable growth and innovation.",
-  },
-  {
-    id: 2,
-    name: "Zara Shafique",
-    title: "Head of AI Automation",
-    rating: "4.7",
-    image: team2,
-    layout: "text-first",
-    text: "Creating automated workflows that eliminate repetitive tasks, connect business processes, and improve operational efficiency through intelligent automation.",
-  },
-  {
-    id: 3,
-    name: "Muhammad Abdullah",
-    title: "Full Stack Developer",
-    image: team3,
-    layout: "image-first",
-    text: "Engineering reliable web applications and scalable software platforms that deliver smooth user experiences and support complex business requirements.",
-  },
-  {
-    id: 4,
-    name: "Noor Fatima",
-    title: "Business Development Officer",
-    image: team4,
-    layout: "text-first",
-    text: "Identifying new business opportunities, understanding client requirements, and connecting organizations with technology solutions aligned with their goals.",
-  },
-  {
-    id: 5,
-    name: "Hamza Tariq",
-    title: "AI Solutions Architect",
-    image: team3,
-    layout: "image-first",
-    text: "Designing AI-powered systems, intelligent agents, and knowledge retrieval solutions that help businesses access information and make better-informed decisions.",
-  },
-  {
-    id: 6,
-    name: "Ayesha Siddiqui",
-    title: "Software Integration Specialist",
-    image: team4,
-    layout: "text-first",
-    text: "Connecting APIs, third-party platforms, and business applications to create seamless data exchange and more connected digital operations.",
-  },
-];
+  const testimonials = [
+    {
+      id: 1,
+      name: "Moiz Qadeer",
+      title: "Director & AI Strategy Lead",
+      image: team1,
+      layout: "image-first",
+      text: "Leading AI strategy and helping organizations identify opportunities to integrate intelligent technologies into their business models for sustainable growth and innovation.",
+    },
+    {
+      id: 2,
+      name: "Zara Shafique",
+      title: "Head of AI Automation",
+      rating: "4.7",
+      image: team2,
+      layout: "text-first",
+      text: "Creating automated workflows that eliminate repetitive tasks, connect business processes, and improve operational efficiency through intelligent automation.",
+    },
+    {
+      id: 3,
+      name: "Muhammad Abdullah",
+      title: "Full Stack Developer",
+      image: team3,
+      layout: "image-first",
+      text: "Engineering reliable web applications and scalable software platforms that deliver smooth user experiences and support complex business requirements.",
+    },
+    {
+      id: 4,
+      name: "Noor Fatima",
+      title: "Business Development Officer",
+      image: team4,
+      layout: "text-first",
+      text: "Identifying new business opportunities, understanding client requirements, and connecting organizations with technology solutions aligned with their goals.",
+    },
+    {
+      id: 5,
+      name: "Ismail Aamir",
+      title: "Generative AI Animator",
+      image: team5,
+      layout: "image-first",
+      text: "Creating AI-generated animations, visual content, and engaging digital experiences using generative AI technologies to bring creative concepts to life.",
+    },
+    {
+      id: 6,
+      name: "Muhammad Zunaid Sultan",
+      title: "Mobile & Web App Developer",
+      image: team6,
+      layout: "text-first",
+      text: "Developing responsive mobile and web applications with intuitive interfaces, seamless functionality, and reliable integrations to deliver engaging digital experiences.",
+    },
+  ];
 
   return (
     <section className="bg-white p-[5%] overflow-hidden">
@@ -134,11 +136,11 @@ export default function Testimonials() {
         viewport={{ once: true }}
         className="text-center"
       >
-        <h3 className="text-2xl montserrat md:text-3xl xl:text-4xl font-bold text-black">
+        <h3 className="text-xl montserrat md:text-3xl xl:text-4xl font-bold text-black">
           Minds Behind <span className="text-primary">Logic Flows</span> !
         </h3>
 
-        <p className="mt-4 text-sm md:text-base text-text-color">
+        <p className="md:mt-4 mt-2 text-sm md:text-base text-text-color md:text-center text-justify">
           Our team brings together expertise in AI automation, software
           development, and business strategy to build intelligent solutions{" "}
           <br className="lg:block hidden" /> that solve real-world challenges.

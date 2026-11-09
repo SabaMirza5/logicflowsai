@@ -10,7 +10,7 @@ import ContactUs from '../ContactUs'
 
 function HomePage() {
   return (
-    <div>
+    <div className="w-full overflow-x-clip">
       <Hero/>
       <AiSolution/>
       <OurClient/>

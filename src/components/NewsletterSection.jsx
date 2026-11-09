@@ -1,13 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigateButton } from "../App";
+import bgcontact from "../assets/imgs/bgcontact.png";
 
 function NewsletterSection() {
   const { navigateTo } = useNavigateButton();
 
   return (
     <section>
-      <div className="md:px-0 px-[5%]  bg-cover flex-col bg-no-repeat bg-center bg-[url('../src/assets/imgs/bgcontact.png')] md:p-40 p-20">
+      <div
+        className="flex min-h-[360px] flex-col justify-center bg-cover bg-no-repeat bg-[position:78%_center] px-[5%] py-16 sm:py-20 md:min-h-0 md:bg-center md:p-40"
+        style={{ backgroundImage: `url(${bgcontact})` }}
+      >
         <div className="px-[5%]">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -24,7 +28,7 @@ function NewsletterSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="2xl:text-xl md:text-base text-sm lg:pt-5 pt-3 text-white 2xl:leading-[50px] lg:leading-7 leading-6 "
+            className="2xl:text-xl md:text-base text-sm lg:pt-5 pt-3 text-white 2xl:leading-[50px] lg:leading-7 leading-6 md:text-left text-justify "
           >
             We're here to help with any questions, support, or project
             inquiries. Reach out to our team, and let's start a{" "}

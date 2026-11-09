@@ -39,12 +39,12 @@ function CraftingAi() {
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h1 className="text-heading 2xl:text-[60px] xl:text-[40px] lg:text-[26px] md:text-3xl text-2xl 2xl:!leading-[112px] xl:!leading-[50px] md:!leading-[44px] !leading-8">
+        <h1 className="text-heading 2xl:text-[60px] xl:text-[40px] lg:text-[26px] md:text-3xl text-2xl 2xl:!leading-[112px] xl:!leading-[50px] md:!leading-[44px] !leading-8 ">
           Crafting the Future with <br />
           <span className="text-primary">AI</span> and Innovation
         </h1>
 
-        <p className="2xl:pt-[56px] xl:pt-8 pt-5 2xl:text-lg md:text-base text-sm text-text_color 2xl:leading-[44px] md:!leading-8 leading-6">
+        <p className="2xl:pt-[56px] xl:pt-8 pt-5 2xl:text-lg md:text-base text-sm text-text_color 2xl:leading-[44px] md:!leading-8 leading-6 md:text-left text-justify">
           LogicFlowsAI helps businesses unlock the power of artificial
           intelligence through AI agent development, intelligent customer
           support, knowledge base solutions, custom AI SaaS applications,

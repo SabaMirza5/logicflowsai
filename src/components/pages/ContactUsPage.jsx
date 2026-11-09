@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import contactusbg from "../../assets/imgs/contactusbg.png";
 import ContactUs from "../ContactUs";
-import NewsletterSection from "../NewsletterSection";
 
 const ContactUsPage = () => {
   return (
@@ -12,7 +11,7 @@ const ContactUsPage = () => {
         <section className="relative bg-[#101010] text-white px-[5%] pt-28 pb-28 md:pt-36 md:pb-36 overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,140,0,0.16),transparent_35%)]" />
 
-          <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+          <div className="relative  mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           
             <motion.div
               initial={{ opacity: 0, x: -35 }}
@@ -23,13 +22,13 @@ const ContactUsPage = () => {
                 Contact Our Team
               </p>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-6 leading-[1.12]">
+              <h1 className="text-2xl  md:text-6xl font-bold md:mt-6 mt-2 leading-[1.12]">
                 Let's Turn Your
                 <span className="text-[#ff8c00]"> Ideas </span>
                 Into Intelligent Solutions.
               </h1>
 
-              <p className="text-gray-400 max-w-xl text-base md:text-lg leading-8 mt-8">
+              <p className="text-gray-400 max-w-xl text-sm md:text-lg leading-8 md:mt-8 mt-3">
                 Have a challenge to solve or an idea to explore? Tell us what
                 you're working on. We'd love to hear from you.
               </p>
@@ -59,7 +58,6 @@ const ContactUsPage = () => {
         </section>
       </main>
       <ContactUs />
-      <NewsletterSection/>
     </>
   );
 };

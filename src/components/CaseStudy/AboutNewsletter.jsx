@@ -22,13 +22,13 @@ function AboutNewsletter() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeUp}
-        className="rounded-[30px] bg-secondary text-white text-center px-6 py-12 md:px-16 md:py-16"
+        className="rounded-[30px] bg-secondary text-white text-center p-7 md:p-16"
       >
-        <h2 className="text-2xl md:text-4xl font-bold leading-tight">
+        <h2 className="text-xl md:text-4xl font-bold leading-tight">
           Ready to Transform Your Business?
         </h2>
 
-        <p className="text-white/80 text-sm md:text-base leading-7 max-w-2xl mx-auto mt-5">
+        <p className="text-white/80 text-sm md:text-base md:leading-7 leading-6 max-w-2xl mx-auto md:mt-5 mt-2">
           Let's discuss your challenges and explore how AI agents, automation,
           and intelligent integrations can help your business work smarter.
         </p>

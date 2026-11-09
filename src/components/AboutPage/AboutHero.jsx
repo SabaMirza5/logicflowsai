@@ -37,7 +37,7 @@ function AboutHero() {
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="2xl:text-lg md:text-base text-sm lg:pt-5 pt-3 text-text_color 2xl:leading-[44px] lg:leading-7 leading-6 text-center"
+            className="2xl:text-lg md:text-base text-sm lg:pt-5 pt-3 text-text_color 2xl:leading-[44px] lg:leading-7 leading-6   md:text-center text-justify"
           >
             At LogicFlowsAI, we help businesses work smarter through AI agents,
             intelligent customer support, knowledge base solutions, and

@@ -104,7 +104,7 @@ function ContactUs() {
   return (
     <section
       id="contactus"
-      className="lg:bg-[url('../src/assets/imgs/bglines.png')] px-[5%] 2xl:py-[200px] xl:py-[100px] lg:py-[60px] md:py-20 py-10 flex justify-center 2xl:gap-44 xl:gap-24 md:gap-10 gap-5 md:flex-row flex-col items-center bg-no-repeat "
+      className=" bg-center bg-contain  bg-none md:bg-[url('../src/assets/imgs/lines.png')] overflow-x-hidden px-[5%] 2xl:py-[200px] xl:py-[100px] lg:py-[60px] md:py-20 py-10 flex justify-center 2xl:gap-44 xl:gap-24 md:gap-10 gap-5 md:flex-row flex-col items-center bg-no-repeat "
     >
       {/* Left Side */}
       <motion.div
@@ -114,80 +114,17 @@ function ContactUs() {
         transition={{ duration: 0.7, ease: "easeOut" }}
         className="md:w-1/2 w-full "
       >
-        <h1 className="text-primary md:text-start text-center xl:leading-[60px] md:leading-10 leading-8 2xl:text-[66px] xl:text-[50px] lg:text-[30px] text-2xl capitalize font-bold">
+        <h1 className="text-primary md:text-start text-center xl:leading-[60px] md:leading-10 leading-8 2xl:text-[66px] xl:text-[50px] lg:text-[30px] text-xl capitalize font-bold">
           Connect<span className="text-heading"> with Us Today.</span>
         </h1>
 
-        <p className="2xl:text-xl md:text-base text-sm lg:pt-5 2xl:pt-7 pt-3 text-heading 2xl:leading-[50px] lg:leading-7 leading-6 md:text-start text-center">
+        <p className="2xl:text-xl md:text-base text-sm lg:pt-5 2xl:pt-7 pt-3 text-heading 2xl:leading-[50px] lg:leading-7 leading-6 md:text-start text-justify">
           Ready to elevate your experience? Reach out to us today and discover
           how our expertise can propel your success to new heights.
         </p>
 
         {/* Contact Information */}
-        <div className="mt-8 space-y-6">
-          {/* Email */}
-          <motion.div
-            whileHover={{ x: 5 }}
-            className="flex items-center gap-4"
-          >
-            <div className="w-12 h-12  rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-              <MdEmail className="text-primary text-2xl" />
-            </div>
-
-            <div>
-              <h4 className="text-heading font-semibold text-base">
-                Email Us
-              </h4>
-              <a
-                href="mailto:info@matoto.co.za"
-                className="text-heading/70 text-sm hover:text-primary transition"
-              >
-               hello@logicflowsai.com
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Phone */}
-          <motion.div
-            whileHover={{ x: 5 }}
-            className="flex items-center gap-4"
-          >
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-              <MdPhone className="text-primary text-2xl" />
-            </div>
-
-            <div>
-              <h4 className="text-heading font-semibold text-base">
-                Call Us
-              </h4>
-              <a
-                href="tel:+27000000000"
-                className="text-heading/70 text-sm hover:text-primary transition"
-              >
-              +92 308 5635114
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Location */}
-          <motion.div
-            whileHover={{ x: 5 }}
-            className="flex items-center gap-4"
-          >
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-              <MdLocationOn className="text-primary text-2xl" />
-            </div>
-
-            <div>
-              <h4 className="text-heading font-semibold text-base">
-                Our Location
-              </h4>
-              <p className="text-heading/70 text-sm">
-                Sheikhupura, Pakistan
-              </p>
-            </div>
-          </motion.div>
-        </div>
+       
       </motion.div>
 
       {/* Right Side - Contact Form */}
@@ -202,7 +139,7 @@ function ContactUs() {
           className="2xl:space-y-6 md:space-y-4 space-y-2"
           onSubmit={handleSubmit}
         >
-          <div className="flex md:gap-5 gap-2 items-center">
+          <div className="flex md:gap-5 gap-2 items-center md:flex-row flex-col">
             <input
               type="text"
               name="firstName"
@@ -222,7 +159,7 @@ function ContactUs() {
             />
           </div>
 
-          <div className="flex md:gap-5 gap-2 items-center relative">
+          <div className="flex md:gap-5 gap-2 items-center relative md:flex-row flex-col">
             <input
               type="number"
               name="number"
@@ -269,7 +206,7 @@ function ContactUs() {
             </div>
           </div>
 
-          <div className="flex md:gap-5 gap-2 items-center">
+          <div className="flex md:gap-5 gap-2 items-center md:flex-row flex-col">
             <input
               type="number"
               name="users"

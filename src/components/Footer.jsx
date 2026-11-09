@@ -10,6 +10,8 @@ import {
 import { IoLogoLinkedin } from "react-icons/io5";
 import navlogo from "../assets/imgs/navlogo.png";
 
+const MotionLink = motion(Link);
+
 function Footer() {
   const navigate = useNavigate();
 
@@ -67,23 +69,30 @@ function Footer() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
-        className="bg-white p-[5%]  text-gray-700 relative shadow-inner"
+        className="relative overflow-hidden bg-gradient-to-b from-[#171321] via-[#0d0b13] to-[#09090d] px-[5%] py-12 text-gray-200 shadow-inner md:py-16"
       >
-        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-b from-gray-300 to-transparent opacity-50"></div>
+        <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-[#8b5cf6] to-transparent"></div>
+        <div className="pointer-events-none absolute -right-24 -top-32 h-72 w-72 rounded-full bg-[#5706C5]/10 blur-3xl"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:gap-8 md:gap-8 gap-6">
+        <div className="relative grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-8 lg:grid-cols-4 xl:gap-12">
           <motion.div variants={fadeUp}>
-            <div className="flex items-center justify-center">
-              <Link to="/">
+            <div className="flex items-center justify-center text-center">
+              <MotionLink
+                to="/"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ duration: 0.2 }}
+                className="inline-block"
+              >
                 <img
                   src={navlogo}
                   alt="LogicFlowsAI"
-                  className="w-full"
+                  className="w-48 max-w-full"
                 />
-              </Link>
+              </MotionLink>
             </div>
 
-            <p className="text-text_color pt-5 font-normal text-base leading-[30px]">
+            <p className="pt-5 text-center text-sm font-normal leading-7 text-gray-200">
               AI Automation · AI Agents · AI SaaS
             </p>
           </motion.div>
@@ -92,55 +101,69 @@ function Footer() {
             variants={fadeUp}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h3 className="text-xl font-medium text-primary">
+            <h3 className="text-lg font-semibold text-primary">
               Navigations
             </h3>
 
-            <ul className="lg:space-y-5 space-y-2 text-text_color lg:pt-[30px] pt-2">
-              <li className="hover:text-primary">
-                <Link
+            <ul className="space-y-3 pt-5 text-sm text-gray-200 lg:space-y-4">
+              <li>
+                <MotionLink
                   to="/"
                   onClick={() => scrollToSectionWithSmoothScroll("home")}
+                  whileHover={{ x: 5, color: "#ffffff" }}
+                  transition={{ duration: 0.2 }}
+                  className="inline-block transition-colors hover:text-[#c4a7ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
                 >
                   Home
-                </Link>
-              </li>
-
-              <li className="hover:text-primary">
-                <Link
-                  to="/about-us"
-                  onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
-                >
-                  About Us
-                </Link>
-              </li>
-
-              <li className="hover:text-primary">
-                 <Link
-                  to="/services"
-                  onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
-                >
-               Services
-                </Link>
-               
-              </li>
-
-              <li className="hover:text-primary">
-               <Link
-                  to="/faq"
-                  onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
-                >
-               FAQ
-                </Link>
+                </MotionLink>
               </li>
 
               <li>
-               <Link
-                  to="/case-study"
+                <MotionLink
+                  to="/about-us"
                   onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
+                  whileHover={{ x: 5, color: "#ffffff" }}
+                  transition={{ duration: 0.2 }}
+                  className="inline-block transition-colors hover:text-[#c4a7ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
                 >
-               Case Studies
-                </Link>
+                  About Us
+                </MotionLink>
+              </li>
+
+              <li>
+                <MotionLink
+                  to="/services"
+                  onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
+                  whileHover={{ x: 5, color: "#ffffff" }}
+                  transition={{ duration: 0.2 }}
+                  className="inline-block transition-colors hover:text-[#c4a7ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
+                >
+                  Services
+                </MotionLink>
+              </li>
+
+              <li>
+                <MotionLink
+                  to="/faq"
+                  onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
+                  whileHover={{ x: 5, color: "#ffffff" }}
+                  transition={{ duration: 0.2 }}
+                  className="inline-block transition-colors hover:text-[#c4a7ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
+                >
+                  FAQ
+                </MotionLink>
+              </li>
+
+              <li>
+                <MotionLink
+                  to="/case-studies"
+                  onClick={() => scrollToSectionWithSmoothScroll("aboutus")}
+                  whileHover={{ x: 5, color: "#ffffff" }}
+                  transition={{ duration: 0.2 }}
+                  className="inline-block transition-colors hover:text-[#c4a7ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
+                >
+                  Case Studies
+                </MotionLink>
               </li>
             </ul>
           </motion.div>
@@ -149,55 +172,58 @@ function Footer() {
             variants={fadeUp}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <h3 className="text-xl font-medium text-primary">
-              For More Info.
+            <h3 className="text-lg font-semibold text-primary">
+               Call us For More Info.
             </h3>
 
-            <p className="text-base font-normal text-text_color pt-[10px]">
-              Call us: +92 308 5635114
+            <p className="pt-3 text-sm font-normal text-gray-200">
+              Phone No: +92 308 5635114
             </p>
 
-            <p className="text-xl font-medium text-primary pt-8">Email:</p>
+            <p className="pt-6 text-base font-semibold text-primary">Email:</p>
 
-            <p className="text-base font-normal text-text_color lg:pt-[10px] pt-1">
+            <p className="pt-2 text-sm font-normal text-gray-200">
               hello@logicflowsai.com
             </p>
 
-            <p className="text-xl font-medium text-primary lg:pt-11 pt-5">
+            <p className="pt-6 text-base font-semibold text-primary">
               Social Handles:
             </p>
 
-            <div className="flex space-x-[15px] pt-[5px]">
-              <motion.div whileHover={{ y: -4, scale: 1.1 }}>
-                <Link to="https://web.facebook.com/" aria-label="Facebook">
-                  <FaFacebookSquare className="text-primary text-xl hover:text-secondary" />
+            <div className="flex space-x-4 pt-3">
+              <motion.div whileHover={{ y: -4, scale: 1.15 }} whileTap={{ scale: 0.95 }}>
+                <Link to="https://web.facebook.com/" aria-label="Facebook" className="inline-flex rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]">
+                  <FaFacebookSquare className="text-xl text-[#c4a7ff] transition-colors hover:text-secondary" />
                 </Link>
               </motion.div>
 
-              <motion.div whileHover={{ y: -4, scale: 1.1 }}>
+              <motion.div whileHover={{ y: -4, scale: 1.15 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="https://www.instagram.com/matotogroup?igsh=MXUzaDB3Y3I3ZWNndA=="
                   aria-label="Instagram"
+                  className="inline-flex rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
                 >
-                  <FaInstagramSquare className="text-primary text-xl hover:text-secondary" />
+                  <FaInstagramSquare className="text-xl text-[#c4a7ff] transition-colors hover:text-secondary" />
                 </Link>
               </motion.div>
 
-              <motion.div whileHover={{ y: -4, scale: 1.1 }}>
+              <motion.div whileHover={{ y: -4, scale: 1.15 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="https://www.linkedin.com/company/matotogroup/"
                   aria-label="LinkedIn"
+                  className="inline-flex rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
                 >
-                  <IoLogoLinkedin className="text-primary text-xl hover:text-secondary" />
+                  <IoLogoLinkedin className="text-xl text-[#c4a7ff] transition-colors hover:text-secondary" />
                 </Link>
               </motion.div>
 
-              <motion.div whileHover={{ y: -4, scale: 1.1 }}>
+              <motion.div whileHover={{ y: -4, scale: 1.15 }} whileTap={{ scale: 0.95 }}>
                 <Link
                   to="https://x.com/matotogroup?t=FK0ysR6eFouYQuUdQQnjQw&s=08"
                   aria-label="Twitter"
+                  className="inline-flex rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#c4a7ff]"
                 >
-                  <FaTwitterSquare className="text-primary text-xl hover:text-secondary" />
+                  <FaTwitterSquare className="text-xl text-[#c4a7ff] transition-colors hover:text-secondary" />
                 </Link>
               </motion.div>
             </div>
@@ -207,29 +233,29 @@ function Footer() {
             variants={fadeUp}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            <h3 className="text-[22px] text-primary font-normal">Subscribe</h3>
+            <h3 className="text-lg font-semibold text-primary">Subscribe</h3>
 
-            <p className="text-text_color text-sm font-normal leading-8 lg:pt-[22px] pt-2">
+            <p className="pt-3 text-sm font-normal leading-7 text-gray-200">
               Stay updated with our latest features and releases.
             </p>
 
-            <div className="flex mt-1">
+            <div className="mt-4 flex">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-[30px] py-[10px] rounded-l-[30px] bg-[#EBEBEB] border border-gray-300 text-text_color text-base outline-none"
+                className="w-full min-w-0 rounded-l-full border border-white/15 bg-white/5 px-4 py-3 text-sm text-white outline-none placeholder:text-gray-500 focus:border-[#a78bfa] md:px-5"
               />
 
               <motion.button
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}
-                className="bg-primary text-base font-normal text-white md:px-5 px-3 py-[10px] rounded-r-[30px]"
+                className="rounded-r-full bg-primary px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-secondary md:px-5"
               >
                 Join
               </motion.button>
             </div>
 
-            <p className="text-text_color text-sm font-normal leading-8 pt-[22px]">
+            <p className="pt-4 text-xs font-normal leading-6 text-gray-500">
               By subscribing, you agree to our Privacy Policy and consent to
               receive updates from our company.
             </p>
@@ -242,12 +268,17 @@ function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="py-7 text-center md:text-lg text-xs bg-black text-white font-normal"
+        className="border-t border-white/10 bg-[#07070a] px-[5%] py-6 text-center text-xs font-normal text-gray-400 md:text-sm"
       >
         Copyright © 2026 | Powered by{" "}
-        <Link to="https://logicflowsai.com/">
+        <MotionLink
+          to="https://logicflowsai.com/"
+          whileHover={{ color: "#c4a7ff" }}
+          transition={{ duration: 0.2 }}
+          className="inline-block"
+        >
           Logic Flows AI
-        </Link>
+        </MotionLink>
       </motion.div>
     </>
   );
