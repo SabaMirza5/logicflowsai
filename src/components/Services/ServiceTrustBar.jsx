@@ -7,6 +7,7 @@ import {
   FaLink,
   FaProjectDiagram,
   FaPlug,
+  FaRobot,
   FaUserFriends,
 } from "react-icons/fa";
 import {
@@ -16,7 +17,6 @@ import {
   SiGooglesheets,
   SiHubspot,
   SiMeta,
-  SiOpenai,
   SiSalesforce,
   SiTelegram,
   SiWhatsapp,
@@ -24,7 +24,7 @@ import {
 
 const integrationIcons = {
   n8n: { Icon: FaProjectDiagram, color: "text-[#ea4b71]" },
-  OpenAI: { Icon: SiOpenai, color: "text-[#10a37f]" },
+  OpenAI: { Icon: FaRobot, color: "text-[#10a37f]" },
   Claude: { Icon: SiAnthropic, color: "text-[#d97757]" },
   Gemini: { Icon: SiGooglegemini, color: "text-[#4285f4]" },
   WhatsApp: { Icon: SiWhatsapp, color: "text-[#25d366]" },
