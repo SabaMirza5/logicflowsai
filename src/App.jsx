@@ -49,13 +49,13 @@ function App() {
 }
 
 export default App;
-// Custom button function
+
 export const useNavigateButton = () => {
   const navigate = useNavigate();
 
-  // The function to call for navigation
+
   const navigateTo = (path) => {
-    navigate(path); // Navigate to the given path
+    navigate(path); 
   };
 
   return { navigateTo };
