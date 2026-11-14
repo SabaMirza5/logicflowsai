@@ -8,6 +8,7 @@ import {
   FaProjectDiagram,
   FaPlug,
   FaRobot,
+  FaSalesforce,
   FaUserFriends,
 } from "react-icons/fa";
 import {
@@ -17,7 +18,6 @@ import {
   SiGooglesheets,
   SiHubspot,
   SiMeta,
-  SiSalesforce,
   SiTelegram,
   SiWhatsapp,
 } from "react-icons/si";
@@ -29,7 +29,7 @@ const integrationIcons = {
   Gemini: { Icon: SiGooglegemini, color: "text-[#4285f4]" },
   WhatsApp: { Icon: SiWhatsapp, color: "text-[#25d366]" },
   HubSpot: { Icon: SiHubspot, color: "text-[#ff7a59]" },
-  Salesforce: { Icon: SiSalesforce, color: "text-[#00a1e0]" },
+  Salesforce: { Icon: FaSalesforce, color: "text-[#00a1e0]" },
   Meta: { Icon: SiMeta, color: "text-[#0866ff]" },
   "Google Sheets": { Icon: SiGooglesheets, color: "text-[#34a853]" },
   Gmail: { Icon: SiGmail, color: "text-[#ea4335]" },
